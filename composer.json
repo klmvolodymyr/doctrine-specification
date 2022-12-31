@@ -1,0 +1,27 @@
+{
+    "name": "volodymyr-klymniuk/doctrine-specification",
+    "type": "library",
+    "license": "MIT",
+    "description": "Specification Pattern for your Doctrine repositories",
+    "keywords": [
+        "Doctrine",
+        "Repository",
+        "Specification",
+        "Criteria"
+    ],
+    "authors": [
+        {
+            "name": "Volodymyr Klymniuk",
+            "email": "Volodymyr.Klymniuk@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.14",
+        "symfony/property-access": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "VolodymyrKlymniuk\\DoctrineSpecification\\": "src/"
+        }
+    }
+}
