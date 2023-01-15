@@ -2,6 +2,9 @@
 
 namespace VolodymyrKlymniuk\DoctrineSpecification\ResultTransformer;
 
+/**
+ * Reorders result collection by ids which are provided in constructor
+ */
 class ReorderById implements ResultTransformerInterface
 {
     protected array $ids = [];

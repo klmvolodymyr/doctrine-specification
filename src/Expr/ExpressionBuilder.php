@@ -2,6 +2,9 @@
 
 namespace VolodymyrKlymniuk\DoctrineSpecification\Expr;
 
+/**
+ * Factory class for the specifications.
+ */
 class ExpressionBuilder
 {
     /**

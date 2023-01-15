@@ -4,6 +4,9 @@ namespace VolodymyrKlymniuk\DoctrineSpecification\Expr;
 
 use Doctrine\ORM\QueryBuilder;
 
+/**
+ * Expression interface
+ */
 interface ExpressionInterface
 {
     /**

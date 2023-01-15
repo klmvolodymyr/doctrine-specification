@@ -4,6 +4,9 @@ namespace VolodymyrKlymniuk\DoctrineSpecification\ResultTransformer;
 
 use Symfony\Component\PropertyAccess\PropertyAccess;
 
+/**
+ * Transform result as associative array (map) with key and value which pass as constuctor parameter
+ */
 class Map implements ResultTransformerInterface
 {
     /**

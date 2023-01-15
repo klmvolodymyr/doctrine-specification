@@ -4,6 +4,9 @@ namespace VolodymyrKlymniuk\DoctrineSpecification\ResultTransformer;
 
 use Symfony\Component\PropertyAccess\PropertyAccess;
 
+/**
+ * Fetch from the result only values with key which pass as constructor parameter
+ */
 class OnlyKey implements ResultTransformerInterface
 {
     /**

@@ -1,6 +1,8 @@
 <?php
 
-namespace VolodymyrKlymniuk\DoctrineSpecification;
+namespace VolodymyrKlymniuk\DoctrineSpecification\Visitor;
+
+use VolodymyrKlymniuk\DoctrineSpecification\SpecificationInterface;
 
 interface VisitorInterface
 {

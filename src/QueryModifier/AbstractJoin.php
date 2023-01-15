@@ -4,6 +4,9 @@ namespace VolodymyrKlymniuk\DoctrineSpecification\QueryModifier;
 
 use Doctrine\ORM\QueryBuilder;
 
+/**
+ * Adds to the query JOIN construction
+ */
 abstract class AbstractJoin extends AbstractQueryModifier
 {
     /**
@@ -16,11 +19,6 @@ abstract class AbstractJoin extends AbstractQueryModifier
      */
     private $newAlias;
 
-    /**
-     * @param string $field
-     * @param string $newAlias
-     * @param string $dqlAlias
-     */
     public function __construct(string $field, string $newAlias, string $dqlAlias = null)
     {
         $this->field = $field;

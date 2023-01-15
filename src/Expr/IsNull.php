@@ -4,6 +4,9 @@ namespace VolodymyrKlymniuk\DoctrineSpecification\Expr;
 
 use Doctrine\ORM\QueryBuilder;
 
+/**
+ * Adds a condition: field in null
+ */
 class IsNull extends AbstractExpr
 {
     /**

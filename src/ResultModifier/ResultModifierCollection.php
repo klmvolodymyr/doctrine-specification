@@ -20,7 +20,7 @@ class ResultModifierCollection implements ResultModifierInterface
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function modify(AbstractQuery $query)
     {

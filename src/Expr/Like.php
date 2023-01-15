@@ -2,6 +2,9 @@
 
 namespace VolodymyrKlymniuk\DoctrineSpecification\Expr;
 
+/**
+ * Adds a condition: field like a value
+ */
 class Like extends Comparison
 {
     const CONTAINS = '%%%s%%';

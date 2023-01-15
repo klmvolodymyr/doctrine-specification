@@ -5,6 +5,9 @@ namespace VolodymyrKlymniuk\DoctrineSpecification\Expr;
 use Doctrine\ORM\Query\Expr\Comparison as DoctrineComparison;
 use Doctrine\ORM\QueryBuilder;
 
+/**
+ * Comparison of a field with a value by the given operator.
+ */
 class Comparison extends AbstractExpr
 {
     const EQ = '=';

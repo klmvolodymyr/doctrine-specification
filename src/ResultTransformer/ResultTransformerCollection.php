@@ -2,6 +2,9 @@
 
 namespace VolodymyrKlymniuk\DoctrineSpecification\ResultTransformer;
 
+/**
+ * Collection of transformers
+ */
 class ResultTransformerCollection implements ResultTransformerInterface
 {
     /**

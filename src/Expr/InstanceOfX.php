@@ -4,6 +4,9 @@ namespace VolodymyrKlymniuk\DoctrineSpecification\Expr;
 
 use Doctrine\ORM\QueryBuilder;
 
+/**
+ * Field instance of Class
+ */
 class InstanceOfX extends AbstractExpr
 {
     /**

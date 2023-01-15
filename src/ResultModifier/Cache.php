@@ -4,6 +4,9 @@ namespace VolodymyrKlymniuk\DoctrineSpecification\ResultModifier;
 
 use Doctrine\ORM\AbstractQuery;
 
+/**
+ * Add cache parameters to query
+ */
 class Cache implements ResultModifierInterface
 {
     /**

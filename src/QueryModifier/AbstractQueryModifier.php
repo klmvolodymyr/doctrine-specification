@@ -1,19 +1,16 @@
 <?php
 
-namespace VolodymyrKlymniuk\DoctrineSpecification\Expr;
+namespace VolodymyrKlymniuk\DoctrineSpecification\QueryModifier;
 
 /**
  * Abstract expression
  */
-abstract class AbstractExpr  implements ExpressionInterface
+abstract class AbstractQueryModifier implements QueryModifierInterface
 {
-    /**
-     * @var string
-     */
     protected $dqlAlias;
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getDqlAlias(): string
     {
@@ -21,9 +18,9 @@ abstract class AbstractExpr  implements ExpressionInterface
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
-    public function setDqlAlias(string $alias): ExpressionInterface
+    public function setDqlAlias(string $alias): QueryModifierInterface
     {
         $this->dqlAlias = $alias;
 

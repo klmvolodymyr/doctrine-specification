@@ -1,7 +1,8 @@
 <?php
 
-namespace VolodymyrKlymniuk\DoctrineSpecification;
+namespace VolodymyrKlymniuk\DoctrineSpecification\Visitor;
 
+use VolodymyrKlymniuk\DoctrineSpecification\SpecificationInterface;
 
 class Visitor implements VisitorInterface
 {
@@ -51,6 +52,7 @@ class Visitor implements VisitorInterface
         $specification->innerJoin($this->field, $this->alias);
         //replace dql alias of the visitor's query builder
         $expression = $this->visitor->getWhereExpression();
+
         if ($expression) {
             $expression->setDQLAlias($this->alias);
             //set the expression from the visitor to the specification
@@ -58,8 +60,10 @@ class Visitor implements VisitorInterface
         }
         //add to the specification all query modifiers from the visitor
         $modifiers = $this->visitor->getQueryModifiers();
+
         if (count($modifiers)) {
             foreach ($modifiers as $queryModifier) {
+
                 if ('' === $queryModifier->getDqlAlias()) {
                     $queryModifier->setDqlAlias($this->alias);
                 }

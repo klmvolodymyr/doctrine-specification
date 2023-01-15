@@ -2,6 +2,9 @@
 
 namespace VolodymyrKlymniuk\DoctrineSpecification\Expr;
 
+/**
+ * Adds a condition: field <= value
+ */
 class LessOrEqualThan extends Comparison
 {
     /**

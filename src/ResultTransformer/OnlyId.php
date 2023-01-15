@@ -2,6 +2,9 @@
 
 namespace VolodymyrKlymniuk\DoctrineSpecification\ResultTransformer;
 
+/**
+ * Fetch from the result only values with id key which pass as constuctor parameter
+ */
 class OnlyId extends OnlyKey
 {
     const ID_KEY = 'id';

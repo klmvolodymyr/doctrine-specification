@@ -4,6 +4,9 @@ namespace VolodymyrKlymniuk\DoctrineSpecification\Expr;
 
 use Doctrine\ORM\QueryBuilder;
 
+/**
+ * Not
+ */
 class Not extends AbstractExpr
 {
     /**
@@ -12,7 +15,7 @@ class Not extends AbstractExpr
     private $expression;
 
     /**
-     * @param \Igdr\DoctrineSpecification\Expr\ExpressionInterface $expression
+     * @param \VolodymyrKlymniuk\DoctrineSpecification\Expr\ExpressionInterface $expression
      */
     public function __construct(ExpressionInterface $expression)
     {
