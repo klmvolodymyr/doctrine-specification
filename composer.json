@@ -1,7 +1,7 @@
 {
     "name": "volodymyr-klymniuk/doctrine-specification",
     "type": "library",
-    "license": "SPDX",
+    "license": "MIT-advertising",
     "description": "Specification Pattern for your Doctrine repositories",
     "keywords": [
         "Doctrine",
